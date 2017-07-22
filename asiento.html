@@ -6,12 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="asientos.css">
+    <style>
+    table, th, td {
+    border: 1px solid black;
+    }
+    table {
+    border-spacing: 15px;
+    }
+</style>
 </head>
 <body>
-<div>
-<table class="">
 
-  <tr>
+  <table style="width:35%">
+    <caption>Venta de Pasajes</caption>
+
+    <tr>
 
     <td>4</td>
     <td>8</td>
@@ -60,31 +69,40 @@
     <td>29</td>
 
   </tr>
-
 </table> 
-<form action="">
-    <p>DNI:<input type="number"></p>
-    <td style="right:inherit"><button name="buscar">Buscar</button></td> 
-    
-</form>
-<table>
-    
-        <button type="button">NOMBRE</button>
-    
-        <button type="button">RESERVAR</button>
-    
-        <button type="button">APELLIDO</button>
-         <button type="button">CANCELAR</button>
-        <button type="button">DNI</button>
-        <button type="submit style="cursor:pointer;">Boton</button>
 
-        
-</table>
+
+ <div>
+    <label>DNI:</label><input type="number" id="dni2"> 
+    <button name="buscar" onclick="buscar()">>Buscar</button>
+ </div>
+
+
+
+<div>
+    <label>NOMBRE:</label><input type="text" id="nombre">  <br>
+    <label>APELLIDO:</label><input type="text" id="apellido"><br>
+    <label>DNI:</label><input type="number" id="dni"><br>
+    <button type="button" onclick="reservar()"> RESERVAR</button><br>
+    <button type="button" onclick="cancelar()"> CANCELAR</button><br>
+    <button onclick="listar()">LISTAR</button>
+</div>
+
+<div id="mostrar">
 
 </div>
+<div id="demo">
+
+</div>
+<div id="lista"></div>
+
+<div id="busca"></div>
+
+<script src=asiento.js></script>
+
 </body>
 </html>
-<form>
+
     
 
 
